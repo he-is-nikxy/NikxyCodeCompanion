@@ -1,0 +1,123 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+#code-reviewer {
+  width: 100%;
+  height: 100vh;
+  /* min-height: 100vh; */
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2%;
+  position: relative;
+}
+
+#header {
+  padding: 10px;
+  width: 98%;
+  height: auto;
+  /* border: 1px solid blue; */
+  /* text-align: center; */
+}
+
+#header h1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#review-div {
+  width: 98%;
+  height: auto;
+  /* border: 1px solid orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+  position: absolute;
+  top: 90%;
+}
+
+#review-div button {
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  cursor: pointer;
+  border: 1px solid gray;
+  transition: all ease-in-out 0.3s;
+  user-select: none;
+  /* box-shadow: rgb(115, 233, 211) 0px 20px 30px -10px; */
+  box-shadow: rgba(0, 174, 255, 0.32) 0px 54px 55px, rgba(0, 174, 255, 0.304) 0px -12px 30px, rgba(0, 174, 255, 0.302) 0px 4px 6px, rgba(0, 174, 255, 0.305) 0px 12px 13px, rgba(0, 174, 255, 0.322) 0px -3px 5px;
+  z-index: 100;
+}
+
+#review-div button:hover {
+  background-color: rgb(55, 55, 55);
+  color: white;
+}
+
+#review-div button:active {
+  background-color: aliceblue;
+  color: black;
+}
+
+#main {
+  width: 98%;
+  height: 85%;
+  /* min-width: 90vh; */
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.main-child {
+  width: 47%;
+  height: 98%;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(24, 24, 24);
+  overflow: auto;
+}
+
+#left #code-part {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  /* resize: both; */
+  padding: 10px;
+  font-size: 16px;
+  /* color: rgb(0, 206, 72); */
+  /* background-color: rgb(36, 36, 36); */
+  /* overflow: auto; */
+}
+
+/* #left #code-part pre, #left #code-part pre code {
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+} */
+
+#right {
+  color: black;
+  background-color: rgb(220, 220, 220);
+  overflow: auto;
+  padding: 20px 50px;
+  font-size: 20px;
+}
+
